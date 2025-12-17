@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>永續身心靈美學教育協會｜專業入會申請</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.meee.com.tw/LCg6hN9.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-emerald: #065f46;
+            --brand-sage: #f0f4f1;
+            --brand-gold: #b2935b;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fcfcfc;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif TC', serif;
+        }
+        .gradient-brand {
+            background: linear-gradient(135deg, #065f46 0%, #064e3b 100%);
+        }
+        .text-brand {
+            color: var(--brand-emerald);
+        }
+        .bg-brand-soft {
+            background-color: var(--brand-sage);
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+        }
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .membership-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e5e7eb;
+        }
+        .membership-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(6, 95, 70, 0.1);
+            border-color: var(--brand-emerald);
+        }
+        .btn-premium {
+            background: var(--brand-emerald);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .btn-premium:hover {
+            background: #047857;
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        /* 固定大 Banner 比例 */
+        .hero-section {
+            height: 60vh;
+            max-height: 600px;
+            min-height: 400px;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        /* LINE OA Chat Icon Pulse Effect */
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(6, 199, 85, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(6, 199, 85, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(6, 199, 85, 0); }
+        }
+        .line-chat-btn {
+            animation: pulse-green 2s infinite;
+        }
+    </style>
+</head>
+<body class="text-slate-700 relative">
+
+    <!-- Header -->
+    <header class="nav-glass sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center group">
+                <img src="https://i.meee.com.tw/LCg6hN9.png" alt="Logo" class="h-10 sm:h-12 mr-3 transition-transform group-hover:scale-105">
+                <span class="font-bold text-brand text-base sm:text-xl tracking-wider">永續身心靈美學教育協會</span>
+            </a>
+            <nav class="hidden lg:flex space-x-8 items-center text-sm font-medium">
+                <a href="#about" class="hover:text-emerald-700 transition tracking-wide">關於協會</a>
+                <a href="#team" class="hover:text-emerald-700 transition tracking-wide">理事長簡介</a>
+                <a href="#courses" class="hover:text-emerald-700 transition tracking-wide">相關課程</a>
+                <a href="#membership" class="hover:text-emerald-700 transition tracking-wide">會員制度</a>
+                <a href="#apply" class="hover:text-emerald-700 transition tracking-wide">入會流程</a>
+                <a href="https://forms.gle/M5dQmzULU89AXb138" target="_blank" class="btn-premium text-white px-6 py-2 rounded-full shadow-md tracking-widest font-bold">立即加入</a>
+            </nav>
+            <button id="mobile-menu-button" class="lg:hidden p-2">
+                <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b px-6 py-4 space-y-4">
+            <a href="#about" class="block py-2 text-gray-600 font-medium border-b border-gray-50">關於協會</a>
+            <a href="#team" class="block py-2 text-gray-600 font-medium border-b border-gray-50">理事長簡介</a>
+            <a href="#courses" class="block py-2 text-gray-600 font-medium border-b border-gray-50">相關課程</a>
+            <a href="#membership" class="block py-2 text-gray-600 font-medium border-b border-gray-50">會員制度</a>
+            <a href="#apply" class="block py-2 text-gray-600 font-medium border-b border-gray-50">入會流程</a>
+            <a href="https://forms.gle/M5dQmzULU89AXb138" target="_blank" class="block w-full text-center btn-premium text-white px-4 py-3 rounded-xl font-bold">立即報名</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative overflow-hidden flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=2874&auto=format&fit=crop" class="w-full h-full object-cover" alt="Hero Background">
+        </div>
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        <div class="container mx-auto px-6 relative z-20 text-center text-white">
+            <h2 class="text-sm md:text-lg tracking-[0.4em] mb-4 opacity-90 uppercase">Sustainable Aesthetics</h2>
+            <h1 class="text-3xl md:text-6xl font-bold mb-6 leading-tight serif tracking-wide">
+                歡迎加入<br><span class="text-emerald-300">永續身心靈美學教育協會</span>
+            </h1>
+            <p class="text-base md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed opacity-90">
+                以聯合國永續發展目標 (SDGs) 為引領，推動全人身心整合發展，共創 ESG 價值、教育培訓與社會關懷。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://forms.gle/M5dQmzULU89AXb138" target="_blank" class="bg-white text-emerald-900 font-bold px-10 py-4 rounded-full text-lg hover:bg-emerald-50 transition shadow-xl tracking-widest">
+                    了解更多會員資訊
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-px bg-brand-gold"></div>
+                        <span class="text-brand font-bold tracking-widest text-sm uppercase">About Us</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 serif tracking-wide leading-snug">探索全人身心靈的<br><span class="text-brand">永續美學力量</span></h2>
+                    <div class="space-y-8">
+                        <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-brand shadow-sm">
+                            <h3 class="text-xl font-bold mb-3 text-brand">協會宗旨</h3>
+                            <p class="text-slate-600 leading-relaxed font-light italic">本會非以營利為目的之公益性社會團體</p>
+                            <p class="text-slate-600 leading-relaxed font-light mt-2">以聯合國永續發展目標（SDGs）為方向，透過系統化的學習與體驗，引導個人與企業達成身心與環境的共好。</p>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-slate-800">協會任務</h3>
+                            <p class="text-slate-600 leading-relaxed font-light">融合國際趨勢與傳統智慧，透過跨域合作與社會設計，將永續理念分享至更多社群，促進全人身心發展與生活美學素養。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <!-- 更新後的協會任務圖片 -->
+                    <img src="https://i.meee.com.tw/O9qsdpp.jpg" alt="協會任務" class="rounded-3xl shadow-2xl relative z-10 w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-emerald-50 rounded-full -z-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section id="team" class="section-padding bg-brand-soft">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="md:w-5/12 h-[500px]">
+                    <!-- 更新後的謝雅雲形象照 -->
+                    <img src="https://i.meee.com.tw/PVtfEnv.jpg" alt="謝雅雲 理事長" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-7/12 p-8 md:p-12 lg:p-16">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-brand-gold tracking-widest text-xs font-bold uppercase">Our Leader</span>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2 serif">謝雅雲</h3>
+                    <p class="text-emerald-700 mb-8 font-semibold text-lg tracking-wide border-b pb-4">永續身心靈美學教育協會 理事長</p>
+                    <ul class="space-y-4 text-slate-600 font-light">
+                        <li class="flex items-start">
+                            <span class="text-brand mr-3 mt-1">✦</span> 鴻元生技(股)公司 品牌行銷總監
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand mr-3 mt-1">✦</span> 碧森妮精油品牌 創辦人
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand mr-3 mt-1">✦</span> 采卉森Botava SPA 執行長
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand mr-3 mt-1">✦</span> 碧森妮自然療癒學院 創辦人
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section-padding bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 serif tracking-wide">相關課程介紹</h2>
+                <div class="h-1 w-20 bg-brand-gold mx-auto mb-6"></div>
+                <p class="text-slate-500 tracking-widest">身心靈美學類相關課程</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-emerald-950 text-white rounded-[2rem] p-8 md:p-16 shadow-2xl relative">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v10h-2zm0 12h2v2h-2z"/></svg>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-bold mb-10 serif tracking-wide">💡 妳是否也有這些感覺？</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
+                    <div class="flex items-start p-4 border border-emerald-800 rounded-xl bg-emerald-900/30 transition-colors hover:bg-emerald-900/50">
+                        <span class="mr-4 text-emerald-400 text-xl font-bold italic">01</span>
+                        <p class="font-light tracking-wide">想轉職或創業，卻不知道從哪開始？</p>
+                    </div>
+                    <div class="flex items-start p-4 border border-emerald-800 rounded-xl bg-emerald-900/30 transition-colors hover:bg-emerald-900/50">
+                        <span class="mr-4 text-emerald-400 text-xl font-bold italic">02</span>
+                        <p class="font-light tracking-wide">看別人做得起，卻懷疑自己沒背景？</p>
+                    </div>
+                    <div class="flex items-start p-4 border border-emerald-800 rounded-xl bg-emerald-900/30 transition-colors hover:bg-emerald-900/50">
+                        <span class="mr-4 text-emerald-400 text-xl font-bold italic">03</span>
+                        <p class="font-light tracking-wide">喜歡美，卻不知道這能不能變收入？</p>
+                    </div>
+                    <div class="flex items-start p-4 border border-emerald-800 rounded-xl bg-emerald-900/30 transition-colors hover:bg-emerald-900/50">
+                        <span class="mr-4 text-emerald-400 text-xl font-bold italic">04</span>
+                        <p class="font-light tracking-wide">學了技術卻怕找不到客人？</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScPrG6FONzdzUm0ESZeu2LP18yfNDULJPVGBNCcIfPWqRILsw/viewform" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-12 py-4 rounded-full text-lg transition shadow-lg tracking-[0.2em]">
+                        開啟專屬學習之旅
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="section-padding bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 serif tracking-wide">四大會員類型與權益</h2>
+            <p class="text-slate-500 mb-16 tracking-widest">選擇最適合您的參與方式，與協會共同成長</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Personal Member -->
+                <div class="bg-white rounded-3xl p-8 flex flex-col membership-card text-left shadow-sm">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-emerald-800 mb-2">個人會員</h3>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest">Personal Member</p>
+                    </div>
+                    <div class="flex-grow space-y-4 mb-8">
+                        <p class="text-sm font-medium border-b pb-2">行動角色：支持者、志工</p>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start">✓ 參與所有公益講座</li>
+                            <li class="flex items-start">✓ 優先報名相關活動</li>
+                            <li class="flex items-start">✓ 可加入核心團隊</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t">
+                        <p class="text-2xl font-bold text-brand">NT$1,500 <span class="text-sm font-normal text-slate-400">/ 114年</span></p>
+                        <p class="text-xs text-slate-400 mt-2 font-light">包含入會費(1000)與年費(500優惠)</p>
+                    </div>
+                </div>
+
+                <!-- Sponsor Member -->
+                <div class="bg-white rounded-3xl p-8 flex flex-col membership-card text-left border-2 border-emerald-600 relative shadow-md">
+                    <div class="absolute top-0 right-8 -translate-y-1/2 bg-emerald-600 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest">熱門推薦</div>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-emerald-800 mb-2">贊助會員</h3>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest">Sponsor Member</p>
+                    </div>
+                    <div class="flex-grow space-y-4 mb-8">
+                        <p class="text-sm font-medium border-b pb-2">行動角色：講師、共創者</p>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start">✓ 授權使用協會認證書</li>
+                            <li class="flex items-start">✓ 成為客座講師/發起人</li>
+                            <li class="flex items-start">✓ 優先列入資源媒合名錄</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t">
+                        <p class="text-2xl font-bold text-brand">NT$7,000 <span class="text-sm font-normal text-slate-400">/ 114年</span></p>
+                        <p class="text-xs text-slate-400 mt-2 font-light">包含入會費(1000)與優惠年費</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Member -->
+                <div class="bg-white rounded-3xl p-8 flex flex-col membership-card text-left shadow-sm">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-emerald-800 mb-2">企業會員</h3>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest">Corporate Member</p>
+                    </div>
+                    <div class="flex-grow space-y-4 mb-8">
+                        <p class="text-sm font-medium border-b pb-2">行動角色：ESG合作、品牌主</p>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-start">✓ 申請 ESG 專案計畫</li>
+                            <li class="flex items-start">✓ 產品行銷曝光與合作</li>
+                            <li class="flex items-start">✓ 免費活動名額 (限3名)</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t">
+                        <p class="text-2xl font-bold text-brand">NT$13,000 <span class="text-sm font-normal text-slate-400">/ 114年</span></p>
+                        <p class="text-xs text-slate-400 mt-2 font-light">包含入會費(3000)與首年年費</p>
+                    </div>
+                </div>
+
+                <!-- Honorary Member -->
+                <div class="bg-slate-800 text-white rounded-3xl p-8 flex flex-col membership-card text-left shadow-lg">
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-2">榮譽會員</h3>
+                        <p class="text-xs text-slate-400 uppercase tracking-widest">Honorary Board</p>
+                    </div>
+                    <div class="flex-grow space-y-4 mb-8">
+                        <p class="text-sm font-medium border-b border-slate-700 pb-2">行動角色：願景引路人</p>
+                        <ul class="text-sm text-slate-300 space-y-2">
+                            <li class="flex items-start">✓ 參與長期政策顧問</li>
+                            <li class="flex items-start">✓ 擔任大型行動主持人</li>
+                            <li class="flex items-start">✓ 共同策劃社會永續藍圖</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-700">
+                        <p class="text-2xl font-bold">邀請制</p>
+                        <p class="text-xs text-slate-400 mt-2 font-light">免年費，須簽署 MOU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Section -->
+    <section id="apply" class="section-padding bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 serif tracking-wide">📎 入會流程與資料審核</h2>
+            <p class="text-slate-500 mb-16 tracking-widest">簡單五步驟，與我們一同實踐永續美學</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="text-left bg-brand-soft p-10 rounded-[2.5rem] shadow-inner">
+                    <h3 class="text-xl font-bold text-brand mb-8 flex items-center">
+                        <span class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm italic">P</span>
+                        準備申請文件
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 bg-white rounded-md flex items-center justify-center mr-4 mt-1 border border-emerald-100 shadow-sm text-brand text-xs">✔</div>
+                            <p class="text-slate-700 font-light">身分證影本 (個人) 或公司登記證明 (企業相關)</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 bg-white rounded-md flex items-center justify-center mr-4 mt-1 border border-emerald-100 shadow-sm text-brand text-xs">✔</div>
+                            <p class="text-slate-700 font-light">個人簡歷或公司簡介</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 bg-white rounded-md flex items-center justify-center mr-4 mt-1 border border-emerald-100 shadow-sm text-brand text-xs">✔</div>
+                            <p class="text-slate-700 font-light">入會動機與參與方向 (建議 300 字內)</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 bg-white rounded-md flex items-center justify-center mr-4 mt-1 border border-emerald-100 shadow-sm text-brand text-xs">✔</div>
+                            <p class="text-slate-700 font-light">匯款憑證影本或截圖</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="text-left bg-emerald-950 text-white p-10 rounded-[2.5rem] flex flex-col shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+                    <h3 class="text-xl font-bold text-emerald-300 mb-8 flex items-center">
+                        <span class="bg-emerald-400 text-emerald-950 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm italic">S</span>
+                        審核五步驟
+                    </h3>
+                    <div class="space-y-6 font-light flex-grow">
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 mr-4 font-bold">01.</span>
+                            <p class="tracking-wide">線上填寫《入會申請表》並上傳必備文件</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 mr-4 font-bold">02.</span>
+                            <p class="tracking-wide">完成指定會費匯款，並通知協會行政團隊</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 mr-4 font-bold">03.</span>
+                            <p class="tracking-wide">協會進行 7～10 個工作日書面資格審查</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 mr-4 font-bold">04.</span>
+                            <p class="tracking-wide">專人通知審核結果 (若不符資格將全額退費)</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 mr-4 font-bold">05.</span>
+                            <p class="tracking-wide">完成正式入會程序，開啟您的永續美學之旅</p>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="https://forms.gle/M5dQmzULU89AXb138" target="_blank" class="block w-full text-center bg-white text-emerald-950 font-bold py-4 rounded-full hover:bg-emerald-100 transition shadow-lg tracking-[0.4em]">
+                            立即入會申請
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Payment -->
+    <section id="contact" class="section-padding bg-slate-50 border-t">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl grid md:grid-cols-2 gap-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+                    <img src="https://i.meee.com.tw/LCg6hN9.png" class="w-64" alt="Watermark">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-brand mb-8 serif tracking-wide flex items-center">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"/><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" clip-rule="evenodd"/></svg>
+                        匯款資訊
+                    </h3>
+                    <div class="space-y-6 text-slate-600 bg-slate-50 p-6 rounded-2xl">
+                        <div>
+                            <p class="text-xs uppercase text-slate-400 mb-1">Account Holder 戶名</p>
+                            <p class="font-bold text-lg text-slate-800">永續身心靈美學教育協會謝雅雲</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase text-slate-400 mb-1">Bank Name 銀行</p>
+                            <p class="font-bold text-lg text-slate-800">(013) 國泰世華銀行 崇德分行</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase text-slate-400 mb-1">Account Number 帳號</p>
+                            <p class="font-bold text-2xl text-brand tracking-wider">241-0350-18414</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-brand mb-8 serif tracking-wide flex items-center">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        注意事項
+                    </h3>
+                    <ul class="space-y-5 text-slate-600 font-light text-sm leading-relaxed">
+                        <li class="flex items-start"><span class="text-brand mr-3">•</span> 匯款後約需 7～10 個工作日完成書面審核程序。</li>
+                        <li class="flex items-start"><span class="text-brand mr-3">•</span> 通過後將由專人聯繫；若不符資格，費用全額退還。</li>
+                        <li class="flex items-start"><span class="text-brand mr-3">•</span> 協會提撥每年年底 10% 盈餘捐贈予公益團體。</li>
+                        <li class="flex items-start"><span class="text-brand mr-3">•</span> 歡迎隨喜贊助協會承辦之各類公益活動與社會倡議。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-emerald-100 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-10 opacity-80">
+                <img src="https://i.meee.com.tw/LCg6hN9.png" alt="Logo" class="h-16 mx-auto brightness-0 invert opacity-50">
+            </div>
+            <h4 class="text-lg font-bold mb-4 serif tracking-[0.2em] text-white">永續身心靈美學教育協會</h4>
+            <p class="text-sm opacity-60 font-light mb-8 max-w-md mx-auto">共同實踐 ESG × 教育培訓 × 公益活動 × 價值傳遞，致力於推動身心靈的永續發展藍圖。</p>
+            <div class="flex justify-center space-x-6 mb-10">
+                <span class="text-xs opacity-40 uppercase tracking-widest font-light tracking-[0.3em]">Sustainable Future Starts Here</span>
+            </div>
+            <div class="pt-8 border-t border-emerald-900/50 text-xs opacity-40 font-light">
+                © 2026 Sustainable Aesthetics Education Association. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating LINE OA CHAT Icon -->
+    <a href="https://lin.ee/dr703CJ" target="_blank" rel="noopener noreferrer" title="聯繫我們" class="line-chat-btn fixed bottom-6 right-6 z-[9999] transition-transform hover:scale-110 active:scale-95 group">
+        <div class="bg-[#06C755] p-3 rounded-full shadow-2xl flex items-center justify-center">
+            <svg class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.001 3H3C1.895 3 1 3.895 1 5V17C1 18.105 1.895 19 3 19H8.333L10.166 21.521C10.534 22.01 11.232 22.189 11.815 21.92C12.398 21.652 12.778 21.046 12.778 20.385V19H21.001C22.106 19 23.001 18.105 23.001 17V5C23.001 3.895 22.106 3 21.001 3ZM8.118 14.18H6.21V9.82H8.118V14.18ZM12.398 14.18H10.49V9.82H12.398V14.18ZM16.678 14.18H14.77V9.82H16.678V14.18Z"/>
+            </svg>
+            <!-- Label appears on hover -->
+            <span class="absolute right-full mr-3 bg-white text-[#06C755] border border-[#06C755] px-3 py-1 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+                線上諮詢
+            </span>
+        </div>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Current year handled by static 2026 as per request, but script can remain for other dynamic elements
+    </script>
+
+</body>
+</html>
